@@ -1,0 +1,88 @@
+body
+{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 20% 60% 20%;
+    background-image: url("../images/imagesFond.png");
+    background-color: #19233a;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20%;
+}
+
+body div.retour
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: aqua;
+}
+
+body div.retour img.flecheRetour
+{
+    width: 50%;
+}
+
+body div.containerPseudo
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: red;
+}
+
+body div h1.pseudoH1
+{
+    font-family: font NWS;
+}
+
+body div input.inputPseudo
+{
+    border: none;
+    background-color: red;
+    margin-bottom: 1%;
+    border-bottom: 2px solid black;
+    font-family: font NWS;
+    font-size: 150%;
+    color: white;
+}
+
+body div.humeurs
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: green;
+}
+
+body div.humeurs h2.txtHumeur
+{
+    text-align: center;
+    font-family: font NWS;
+}
+
+
+body div.humeurs img.sad
+{
+    width: 20%;
+}
+
+body div.humeurs img.happy
+{
+    width: 20%;
+}
+
+body div.humeurs img.veryHappy
+{
+    width: 20%;
+}
+
+body div.containerMessage
+{
+    grid-column: 2 / 3;
+    grid-row: 3 / -1;
+    background-color: yellow;
+}
+
+@font-face
+{
+    font-family: "font NWS";
+    src: url("Duepuntozero-Regular-Trial.ttf");
+}
