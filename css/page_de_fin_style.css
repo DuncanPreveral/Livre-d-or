@@ -1,0 +1,129 @@
+html{
+    height: 100%;
+}
+
+body
+{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 50% 30% 30%;
+    background-color: #19233a;
+    background-repeat: no-repeat;
+}
+
+body div.retour
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+body div.retour img#flecheRetour
+{
+    padding-left: 20%;
+    width: 41%;
+    padding-top: 7%;
+}
+
+body div.oeil
+{
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+
+body div.oeil img
+{
+    width: 120%;
+    padding-left: 3%;
+    margin-top: -25%;
+}
+
+.remerciement{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4; 
+    text-align: center;
+    font-family: font NWS;
+    vertical-align: center;
+    color: white;
+}
+
+body div.continuer
+{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+body div.continuer img
+{
+    position: absolute;
+    width: 40%;
+    left: 40%;
+}
+
+
+/*
+body div.containerPseudo
+{
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    background-image: "/images/imagesOeil";
+}
+
+body div h1.pseudoH1
+{
+    font-family: font NWS;
+}
+
+body div input.inputPseudo
+{
+    border: none;
+    margin-bottom: 1%;
+    border-bottom: 2px solid black;
+    font-family: font NWS;
+    font-size: 150%;
+    color: white;
+}
+
+body div.humeurs
+{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: green;
+}
+
+body div.humeurs h2.txtHumeur
+{
+    text-align: center;
+    font-family: font NWS;
+}
+
+body div.humeurs div.imgHumeurs
+{
+    align-content: center;
+}
+
+body div.humeurs img.sad
+{
+    width: 20%;
+}
+
+body div.humeurs img.happy
+{
+    width: 20%;
+}
+
+body div.humeurs img.veryHappy
+{
+    width: 20%;
+}
+
+body div.containerMessage
+{
+    grid-column: 2 / 3;
+    grid-row: 4 / -1;
+    background-color: yellow;
+}
+*/
+@font-face
+{
+    font-family: "font NWS";
+    src: url("Duepuntozero-Regular-Trial.ttf");
+}

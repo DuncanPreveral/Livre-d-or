@@ -1,0 +1,70 @@
+body{
+    background-color: #19233a;
+    margin: 0%;
+    background-image: url("../images/imagesOeil.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+header{
+    display:flex;
+    background-color: #19233a;
+}
+
+.Contenue{
+    width: 75%; 
+    margin: auto; 
+    font-family: font NWS;
+}
+
+p{
+    color: white;  
+}
+
+#taille{
+    height: 1200px;
+    width: 1200px;
+   
+}
+
+.rectangle{
+    width:225px;
+    height: 225px;
+    position:absolute;
+    left:800px;
+    top:1300px;
+    border-radius: 3px; 
+}
+
+p.texte{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 250%;
+}
+
+p.compteur
+{
+    text-align: center;
+    font-size: 250%;
+}
+
+img{
+    width: 300%;
+    height: 100%;
+    margin-top : 200%;
+}
+
+.neige {
+    width: 450px;
+    height: 700px;
+    position: absolute;
+    left: 100px;
+    top: 1100px;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family : "font NWS";
+    src : url("../css/Duepuntozero-Regular-Trial.ttf"); 
+}

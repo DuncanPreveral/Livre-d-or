@@ -1,9 +1,61 @@
-button.addEventListener("click", getMessage);
+    let varHumeur = 0;
+    let nouveauMessage = {
+        nomPrénom: '',
+        humeur: '',
+        entreprise: '',
+        avisSF: '',
+        engagement: '',
+    }
 
-function getMessage() {
-    let mess = document.getElementById("saisie").value;
-    alert(mess);
+    let tableau = localStorage.getItem("tableauMessages");
 
-    let contain = document.createElement("div");
-    contain = 
-}
+
+    if(tableau === null){tableau = []}
+
+    function sauvegarderMessage()
+    {
+        nouveauMessage.nomPrénom = document.getElementById("pseudo").value;
+        nouveauMessage.entreprise = document.getElementById("entreprise").value;
+        nouveauMessage.humeur = varHumeur;
+        nouveauMessage.avisSF = document.getElementById("avisSF").value;
+        nouveauMessage.engagement = document.getElementById("engagement").value;
+        tableau.push(nouveauMessage);
+        console.log(tableau);
+        tableau = JSON.stringify(tableau);
+        localStorage.setItem("tableau",tableau);
+        tableau = JSON.parse(tableau);
+    }
+    
+    function sad()
+    {
+        let x = document.getElementById('sad');
+        x.src='./images/sad2.png';
+        let y = document.getElementById('happy');
+        y.src='./images/imagesHappy.png';
+        let z = document.getElementById('veryHappy');
+        z.src='./images/imagesVeryHappy.png';
+        varHumeur = 1;
+    }
+
+    function happy()
+    {
+        let x = document.getElementById('sad');
+        x.src='./images/imagesSad.png';
+        let y = document.getElementById('happy');
+        y.src='./images/happy2.png';
+        let z = document.getElementById('veryHappy');
+        z.src='./images/imagesVeryHappy.png';
+        console.log(y.src);
+        varHumeur = 2;
+    }
+
+    function veryHappy()
+    {
+        let x = document.getElementById('sad');
+        x.src='./images/imagesSad.png';
+        let y = document.getElementById('happy');
+        y.src='./images/imagesHappy.png';
+        let z = document.getElementById('veryHappy');
+        z.src='./images/veryHappy2.png';
+        varHumeur = 3;
+    }

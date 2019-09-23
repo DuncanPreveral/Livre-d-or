@@ -11,24 +11,35 @@
 
 <body>
     <div class="retour">
+        <a href="page_de_transition.html">
         <img src="./images/imagesRetour.png" class="flecheRetour" alt="">
+        </a>
     </div>
     <div class="containerPseudo">
-        <h1 class="pseudoH1">Pseudo :</h1>
-        <input class="inputPseudo" type="text" size="25">
+        <h1 class="pseudoH1">Nom & Prénom :</h1>
+        <input class="inputPseudo" id="pseudo" type="text" size="25">
+    </div>
+    <div class="containerEntreprise">
+        <h1 class="entrepriseH1">Entreprise :</h1>
+        <input class="inputEntreprise" id="entreprise" type="text" size="25">
     </div>
     <div class="humeurs">
         <h2 class="txtHumeur">Votre humeur ?</h2>
-        <div class="imgHumeurs">
-            <img class="sad" src="./images/imagesSad.png" alt="">
-            <img class="happy" src="./images/imagesHappy.png" alt="">
-            <img class="veryHappy" src="./images/imagesVeryHappy.png" alt="">
+        <div class="imgHumeurs" id="humeur">
+            <img class="sad" id="sad" src="./images/imagesSad.png" alt="" onclick="sad()">
+            <img class="happy" id="happy" src="./images/imagesHappy.png" alt="" onclick="happy()">
+            <img class="veryHappy" id="veryHappy" src="./images/imagesVeryHappy.png" alt="" onclick="veryHappy()">
         </div>
     </div>
     <div class="containerMessage">
         <div class="message">
-            <input type="text" value="Entrez votre message">
-            <!--<img src="./images/imagesEnvoyer.png">-->
+                <p class="engagement">"Votre avis sur le Summer Festival :</p>
+            <input class="txt" id="avisSF" type="text" >
+            <p class="engagement">"Sur le plan éthique je m'engage à :</p> 
+            <input class="txt" id="engagement" type="text">
+            <!--<a href="page_de_fin.html" src="./images/imagesEnvoyer.png">-->
+                <img class="imgEnvoyer" id="envoyer" src="./images/imagesEnvoyer.png" onclick="sauvegarderMessage()">
+            <!--</a>-->
         </div>
     </div>
 
