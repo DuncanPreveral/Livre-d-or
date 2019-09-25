@@ -7,10 +7,11 @@
         engagement: '',
     }
 
-    let tableau = localStorage.getItem("tableauMessages");
+    let tableau = localStorage.getItem("tableau");
 
 
     if(tableau === null){tableau = []}
+    else(tableau = JSON.parse(tableau));
 
     function sauvegarderMessage()
     {
@@ -19,11 +20,9 @@
         nouveauMessage.humeur = varHumeur;
         nouveauMessage.avisSF = document.getElementById("avisSF").value;
         nouveauMessage.engagement = document.getElementById("engagement").value;
-        tableau.push(nouveauMessage);
-        console.log(tableau);
-        tableau = JSON.stringify(tableau);
-        localStorage.setItem("tableau",tableau);
-        tableau = JSON.parse(tableau);
+        tableau.push(nouveauMessage); 
+        console.log(localStorage.getItem(tableau));
+        localStorage.setItem("tableau",JSON.stringify(tableau));
     }
     
     function sad()
