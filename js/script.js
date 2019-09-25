@@ -10,18 +10,23 @@
     let tableau = localStorage.getItem("tableau");
 
 
-    if(tableau === null){tableau = []}
-    else(tableau = JSON.parse(tableau));
+    if(tableau === null){
+		tableau = [];
+	}
+    else{
+		tableau = JSON.parse(tableau);
+	}
 
     function sauvegarderMessage()
     {
+		console.log("appel");
         nouveauMessage.nomPrénom = document.getElementById("pseudo").value;
         nouveauMessage.entreprise = document.getElementById("entreprise").value;
         nouveauMessage.humeur = varHumeur;
         nouveauMessage.avisSF = document.getElementById("avisSF").value;
         nouveauMessage.engagement = document.getElementById("engagement").value;
         tableau.push(nouveauMessage); 
-        console.log(localStorage.getItem(tableau));
+        //console.log(localStorage.getItem(tableau));
         localStorage.setItem("tableau",JSON.stringify(tableau));
     }
     
